@@ -1,0 +1,21 @@
+# Default configuration for Autonomous Reasoning Engine
+
+input_data:
+  path: /data/input
+  format: csv
+data_lake:
+  path: /data/lake
+  format: parquet
+data_warehouse:
+  path: /data/warehouse
+  format: postgres
+ai_model:
+  type: neural_network
+  hyperparameters:
+    learning_rate: 0.01
+    hidden_layers: 2
+decision_engine:
+  type: rule_based
+  rules:
+    - condition: x > 0
+      action: approve
