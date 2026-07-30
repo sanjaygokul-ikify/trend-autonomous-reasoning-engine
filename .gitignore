@@ -1,0 +1,7 @@
+# Ignore files and directories
+
+*.pyc
+__pycache__
+.git
+.config
+.env
