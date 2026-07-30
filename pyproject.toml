@@ -1,0 +1,8 @@
+[tool.poetry]
+name = "autonomous-reasoning-engine"
+version = "1.0.0"
+description = "A high-performance, distributed autonomous reasoning engine"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandas = "^1.4"
