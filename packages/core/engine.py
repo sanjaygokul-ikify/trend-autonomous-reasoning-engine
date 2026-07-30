@@ -43,6 +43,9 @@ class AutonomousReasoningEngine(ABC):
         except AutonomousReasoningEngineError as e:
             logger.error(f"Error executing engine: {e}")
             return None, e
+        except Exception as e:
+            logger.error(f"Unexpected error executing engine: {e}")
+            return None, AutonomousReasoningEngineError(str(e))
 
     def get_output(self) -> OutputData:
         return self.output_data
