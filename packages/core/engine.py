@@ -52,6 +52,9 @@ class AutonomousReasoningEngine(ABC):
 
 
 class RealTimeAutonomousReasoningEngine(AutonomousReasoningEngine):
+    def __init__(self, input_data: InputData):
+        super().__init__(input_data)
+    
     def preprocess(self) -> None:
         logger.info("Preprocessing input data...")
         # Implement preprocessing logic here
